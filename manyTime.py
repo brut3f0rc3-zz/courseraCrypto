@@ -14,8 +14,6 @@ ciphers = [
 '32510ba9babebbbefd001547a810e67149caee11d945cd7fc81a05e9f85aac650e9052ba6a8cd8257bf14d13e6f0a803b54fde9e77472dbff89d71b57bddef121336cb85ccb8f3315f4b52e301d16e9f52f904'
  ]
 
-target = ['32510ba9babebbbefd001547a810e67149caee11d945cd7fc81a05e9f85aac650e9052ba6a8cd8257bf14d13e6f0a803b54fde9e77472dbff89d71b57bddef121336cb85ccb8f3315f4b52e301d16e9f52f904']
-
 deList = [['_' for x in xrange(83)] for x in xrange(11)]
 
 def strxor(a, b):       # xor two strings of different lengths
@@ -62,7 +60,6 @@ def main():
         allow = sys.argv[1]
 
     cipherList = decode(ciphers)
-    targetCipher = decode(target)
 
     attack(cipherList,allow)
 
