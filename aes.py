@@ -27,7 +27,7 @@ def main():
         mode = raw_input("Enter the mode :: ")
         aes_cbc(key, cipher, mode.upper())
         reply = raw_input("Continue? ")
-        if reply <> "Y" or reply <> "y":
+        if reply <> "Y":
             break
 
 
